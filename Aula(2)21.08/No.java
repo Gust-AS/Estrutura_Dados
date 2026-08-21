@@ -1,20 +1,15 @@
-public class No<T> {
+public class No<T>{
     private T dado;
-    private No nextNo;
+    private No<T> nextNo;
 
     public No(){
-        this(null,null);
+        this(null);
     }
 
     public No(T dado){
-        this(dado,null);
-    }
-
-    public No(T dado, No nextNo){
         this.dado = dado;
-        this.nextNo = nextNo;
+        this.nextNo = null;
     }
-
 
     //getts e setts
     public T getDado() {
@@ -32,12 +27,6 @@ public class No<T> {
     public void setNextNo(No<T> nextNo) {
         this.nextNo = nextNo;
     }
-    
-    
-   // @Override
-   // public No toString(){
-   //     return No.format("Pessoa[Nome: %s, Idade: %d, %s]",getNome(),getIdade(), end.toString());
-   // }
 
     
 }

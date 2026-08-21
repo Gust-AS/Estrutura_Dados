@@ -57,7 +57,7 @@ public class Principal{
         
         lista.get(3).setNome("Jason");
         lista.get(3).setIdade(300);
-        lista.get(3).getEnd().setRua("Matrix");
+       // lista.get(3).getEnd().setRua("Matrix");
         lista.get(3).getEnd().setNumero(666);
         lista.get(3).getEnd().setBairro("mortes");
 
