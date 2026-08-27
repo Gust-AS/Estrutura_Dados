@@ -11,22 +11,24 @@ public class No<T>{
         this.nextNo = null;
     }
 
-    //getts e setts
-    public T getDado() {
-        return dado;
-    }
-
-    public void setDado(T dado) {
+    public void setDado(T dado){
         this.dado = dado;
     }
 
-    public No<T> getNextNo() {
-        return nextNo;
+    public T getDado(){
+        return this.dado;
     }
 
-    public void setNextNo(No<T> nextNo) {
+    public void setNextNo(No<T> nextNo){
         this.nextNo = nextNo;
     }
 
-    
+    public No<T> getNextNo(){
+        return this.nextNo;
+    }
+
+    @Override
+    public String toString(){
+        return "Dado{ " + getDado() + "}";
+    }
 }
