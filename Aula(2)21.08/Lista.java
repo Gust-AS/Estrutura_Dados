@@ -40,6 +40,41 @@ public class Lista<T>{
         }
     }
 
+    public void addFinal(T dado){
+        No<T> novoNo = new No<T>(dado);
+        if (primeiroNo == null) {
+            novoNo = ultimoNo;
+            novoNo = primeiroNo;
+        }
+        else{
+            ultimoNo.setNextNo(novoNo);
+            ultimoNo = novoNo;
+        }
+
+    }
+
+    public void removeFinal(){
+        if (primeiroNo == null) {
+            System.out.println("lista vazia");
+        }else{
+            System.out.println("Dado:" + ultimoNo.getDado() + " removido!");
+
+            if (primeiroNo == ultimoNo) {
+                primeiroNo = primeiroNo.getNextNo();
+                ultimoNo = ultimoNo.getNextNo();
+            }
+            else{
+                No<T> aux = primeiroNo;
+
+                while (aux.getNextNo() != ultimoNo) {
+                    aux = aux.getNextNo();   
+                }
+
+                ultimoNo = aux;
+                aux.setNextNo(null);
+            }
+        }
+    }
     public void imprimeLista(){
         if(primeiroNo == null){
             System.out.println("Lista vazia!");

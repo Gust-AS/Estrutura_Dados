@@ -3,12 +3,13 @@ public class Principal{
         //Lista de Alunos
         Lista<String> lista = new Lista<String>("Alunos");
 
+        /* 
         lista.imprimeLista();
-        lista.addInicio("Rafael");
+        lista.addInicio("Jhin");
         lista.imprimeLista();
-        lista.addInicio("Gabriel");
+        lista.addInicio("Leona");
         lista.imprimeLista();
-        lista.addInicio("Danielly");
+        lista.addInicio("Ahri");
         lista.imprimeLista();
 
         lista.removeInicio();
@@ -18,7 +19,15 @@ public class Principal{
         lista.removeInicio();
         lista.imprimeLista();
         lista.removeInicio();
+        */
 
+        lista.addInicio("Jhin");
+        lista.addInicio("Leona");
+        lista.addInicio("Gragas");
+        lista.addFinal ("Fidlestricks");
+        lista.imprimeLista();
+        lista.removeFinal();
+        lista.imprimeLista();
         
     }
 }
