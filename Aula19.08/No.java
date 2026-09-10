@@ -10,7 +10,7 @@ public class No<T> {
         this(dado,null);
     }
 
-    public No(T dado, No nextNo){
+    public No(T dado, No<T> nextNo){
         this.dado = dado;
         this.nextNo = nextNo;
     }
