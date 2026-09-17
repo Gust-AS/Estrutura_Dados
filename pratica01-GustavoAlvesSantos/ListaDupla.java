@@ -51,7 +51,7 @@ public class ListaDupla<T> {
         }
     }
 
-    public void addMeio(T dado, int posicao){
+    public void  addMeio(T dado, int posicao){
         if(posicao <= 0){
             addInicio(dado);
             return;

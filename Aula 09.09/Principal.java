@@ -12,16 +12,23 @@ public class Principal{
         no1.getProximoNo().getDado();
     */
         ListaDupla<String> lista = new ListaDupla<String>("Alunos");
+        
         lista.addInicio("Rafael");
+        /*
         lista.addInicio("Cecilia");
         lista.addFinal("Joaquim");
         lista.imprimeLista();
 
         lista.addMeio("Lara", 2);
         lista.imprimeLista();
+        
         System.out.println("Dado: " + lista.removeInicio() + " removido!");
         lista.imprimeLista();
         System.out.println("Dado: " + lista.removeFinal() + " removido!");
+        lista.imprimeLista();
+        */
+
+        System.out.println("Dado: " + lista.removeMeio(2) + " removido!");
         lista.imprimeLista();
     }
 }
